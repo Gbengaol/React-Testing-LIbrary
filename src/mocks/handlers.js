@@ -2,9 +2,8 @@ import { rest } from "msw";
 
 export const handlers = [
   // Handles a POST /login request
-  rest.get("http://localhost:3000/scoops", (req, res, ctx) => {
+  rest.get("http://localhost:3030/scoops", (req, res, ctx) => {
     return res(
-      ctx.status(403),
       ctx.json([
         {
           name: "Chocolate",
