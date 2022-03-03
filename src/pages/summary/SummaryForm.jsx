@@ -22,6 +22,7 @@ export default function SummaryForm() {
   return (
     <Form>
       <Options optionType="scoops" />
+      <Options optionType="toppings" />
       <Form.Group controlId="terms-and-conditions">
         <Form.Check
           type="checkbox"
