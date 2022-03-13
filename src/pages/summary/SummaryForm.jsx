@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Form, Button, Popover, OverlayTrigger } from "react-bootstrap";
-import Options from "../entry/Options";
 
 export default function SummaryForm() {
   const [tcChecked, setTcChecked] = useState(false);
@@ -21,8 +20,6 @@ export default function SummaryForm() {
   );
   return (
     <Form>
-      <Options optionType="scoops" />
-      <Options optionType="toppings" />
       <Form.Group controlId="terms-and-conditions">
         <Form.Check
           type="checkbox"
